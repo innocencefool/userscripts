@@ -39,28 +39,28 @@ if (table != null) {
                 if (i == 0) {
                     if (e.querySelector('span').textContent == '电信') {
                         let order = 1000000;
-                        for (let i = 2; i < 4; i++) {
-                            order += e.innerText.charCodeAt(i);
+                        for (let i = 3; i <= 4; i++) {
+                            order += e.innerText.charCodeAt(i) * 10;
                         }
-                        tr.style.order = order;
+                        tr.style.order = order + e.innerText.charCodeAt(e.innerText.length - 1);
                     } else if (e.querySelector('span').textContent == '联通') {
                         let order = 2000000;
-                        for (let i = 2; i < 4; i++) {
-                            order += e.innerText.charCodeAt(i);
+                        for (let i = 3; i <= 4; i++) {
+                            order += e.innerText.charCodeAt(i) * 10;
                         }
-                        tr.style.order = order;
+                        tr.style.order = order + e.innerText.charCodeAt(e.innerText.length - 1);
                     } else if (e.querySelector('span').textContent == '移动') {
                         let order = 3000000;
-                        for (let i = 2; i < 4; i++) {
-                            order += e.innerText.charCodeAt(i);
+                        for (let i = 3; i <= 4; i++) {
+                            order += e.innerText.charCodeAt(i) * 10;
                         }
-                        tr.style.order = order;
+                        tr.style.order = order + e.innerText.charCodeAt(e.innerText.length - 1);
                     } else {
                         let order = 4000000;
-                        for (let i = 2; i < e.innerText.length - 2; i++) {
-                            order += e.innerText.charCodeAt(i);
+                        for (let i = 3; i <= 4; i++) {
+                            order += e.innerText.charCodeAt(i) * 10;
                         }
-                        tr.style.order = order;
+                        tr.style.order = order + e.innerText.charCodeAt(e.innerText.length - 1);
                     }
                 }
                 if (i == 4) {
@@ -75,28 +75,28 @@ if (table != null) {
                 if (i == 0) {
                     if (e.querySelector('span').textContent == '电信') {
                         let order = 1000000;
-                        for (let i = 2; i < 4; i++) {
-                            order += e.innerText.charCodeAt(i);
+                        for (let i = 3; i <= 4; i++) {
+                            order += e.innerText.charCodeAt(i) * 10;
                         }
-                        tr.style.order = order;
+                        tr.style.order = order + e.innerText.charCodeAt(e.innerText.length - 1);
                     } else if (e.querySelector('span').textContent == '联通') {
                         let order = 2000000;
-                        for (let i = 2; i < 4; i++) {
-                            order += e.innerText.charCodeAt(i);
+                        for (let i = 3; i <= 4; i++) {
+                            order += e.innerText.charCodeAt(i) * 10;
                         }
-                        tr.style.order = order;
+                        tr.style.order = order + e.innerText.charCodeAt(e.innerText.length - 1);
                     } else if (e.querySelector('span').textContent == '移动') {
                         let order = 3000000;
-                        for (let i = 2; i < 4; i++) {
-                            order += e.innerText.charCodeAt(i);
+                        for (let i = 3; i <= 4; i++) {
+                            order += e.innerText.charCodeAt(i) * 10;
                         }
-                        tr.style.order = order;
+                        tr.style.order = order + e.innerText.charCodeAt(e.innerText.length - 1);
                     } else {
                         let order = 4000000;
-                        for (let i = 2; i < e.innerText.length - 2; i++) {
-                            order += e.innerText.charCodeAt(i);
+                        for (let i = 3; i <= 4; i++) {
+                            order += e.innerText.charCodeAt(i) * 10;
                         }
-                        tr.style.order = order;
+                        tr.style.order = order + e.innerText.charCodeAt(e.innerText.length - 1);
                     }
                     e.style.width = '160px';
                 } else if (i == 1) {
