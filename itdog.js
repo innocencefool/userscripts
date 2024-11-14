@@ -32,7 +32,7 @@ if (table != null) {
     table.querySelector('tbody').style.display = 'flex';
     table.querySelector('tbody').style.flexDirection = 'column';
     table.querySelectorAll('.node_tr').forEach(tr => {
-        tr.style.setProperty('height', '25px', 'important');
+        tr.style.setProperty('height', '26px', 'important');
         const tds = tr.querySelectorAll('td');
         if (tds.length <= 5) {
             tds.forEach((e, i) => {
@@ -68,6 +68,7 @@ if (table != null) {
                 } else {
                     e.style.width = '310px';
                 }
+                e.style.height = '25px';
             });
         } else {
             tds.forEach((e, i) => {
@@ -109,6 +110,7 @@ if (table != null) {
                 } else {
                     e.style.maxWidth = '0px';
                 }
+                e.style.height = '25px';
             });
         }
     });
