@@ -4,8 +4,12 @@ if (table != null) {
     table.querySelector('thead').style.flexDirection = 'column';
     const ths = table.querySelectorAll('th');
     if (ths.length <= 5) {
-        ths.forEach(e => {
-            e.style.width = '310px';
+        ths.forEach((e, i) => {
+            if (i == 4) {
+                e.style.maxWidth = '0px';
+            } else {
+                e.style.width = '310px';
+            }
         });
     } else {
         ths.forEach((e, i) => {
@@ -20,7 +24,7 @@ if (table != null) {
             } else if (i == 9) {
                 e.style.width = '270px';
             } else {
-                e.style.width = '0px';
+                e.style.maxWidth = '0px';
             }
         });
     }
@@ -59,7 +63,11 @@ if (table != null) {
                         tr.style.order = order;
                     }
                 }
-                e.style.width = '310px';
+                if (i == 4) {
+                    e.style.maxWidth = '0px';
+                } else {
+                    e.style.width = '310px';
+                }
             });
         } else {
             tds.forEach((e, i) => {
@@ -99,7 +107,7 @@ if (table != null) {
                 } else if (i == 9) {
                     e.style.width = '270px';
                 } else {
-                    e.style.width = '0px';
+                    e.style.maxWidth = '0px';
                 }
             });
         }
